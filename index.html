@@ -10,6 +10,14 @@
     <title>marcusvilhelmsson</title>
     <link rel="stylesheet" href="public/style.css">
     <link rel="icon" type="image/x-icon" href="assets/suitcase.png">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            const name = "marcus.vilhelmson"
+            document.getElementById('contactButton').addEventListener('click', function() {
+                window.location.href = 'mailto:' + [ name, 'outlook'].join('@') + '.com';
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="grid-overlay"></div>
@@ -49,7 +57,7 @@
                         <p class="font-monospace">A software engineer, developer, and coffee enthusiast. Turning code into
                             coffee-fueled
                             creations, one line at a time ☕️</p>
-                        <button class="btn btn-outline-success align-self-start">Contact me! <i class="bi bi-envelope"></i></button>
+                        <button class="btn btn-outline-success align-self-start" id="contactButton">Contact me! <i class="bi bi-envelope"></i></button>
                         <ul class="border-2 border-start border-info d-flex gap-3 mt-2 p-0 ps-3">
                             <li class="list-group-item" style="font-size: 30px;">
                                 <a href="https://github.com/marcusvilhelmsson" target="_blank">
@@ -227,6 +235,7 @@
                             </div>
                             <div id="projects" class="animate__animated animate__fadeInDown animate__fast animate__delay-3s">
                                 <h2 class="text-info fw-semibold text-center">&ltProjects&gt</h2>
+                                <h3 class="text-light-emphasis text-center">Coming soon</h3>
                             </div>
     </div>
         <footer>
