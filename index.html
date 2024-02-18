@@ -8,216 +8,227 @@
     <link href="./public/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>marcusvilhelmsson</title>
+    <link rel="stylesheet" href="public/style.css">
     <link rel="icon" type="image/x-icon" href="assets/suitcase.png">
 </head>
 <body>
-    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand mr-auto" href="#">Marcus</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links"
-                aria-controls="links" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="links">
-                <div class="navbar-nav animate__animated animate__fadeInDown animate__fast">
-                    <a class="nav-link" href="#introduction">Contact</a>
-                    <a class="nav-link" href="#skills">Skills</a>
-                    <a class="nav-link" href="#aboutMe">About me</a>
-                    <a class="nav-link" href="#projects">Projects</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="container d-flex flex-column gap-4" style="margin-top:100px">
-        <div id="introduction" class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 order-md-last d-flex align-items-center">
-                    <img width="400px" class="img-fluid flex-shrink-1 rounded-circle mx-auto my-auto" src="assets/profile.png"
-                        alt="profile">
-                </div>
-                <div class="col-12 col-md-6">
-                    <h1 class="d-flex flex-column font-monospace">
-                        <div class="d-flex">
-                            <span>Hi!</span>
-                            <span class="animate__animated animate__shakeX ">👋</span>
-                        </div>
-                        <span>I'm<span class="text-info"> Marcus Vilhelmsson</span></span>
-                    </h1>
-                    <p class="font-monospace">A software engineer, developer, and coffee enthusiast. Turning code into coffee-fueled
-                        creations, one line at a time ☕️</p>
-                    <button class="btn btn-outline-success align-self-start">Contact me! <i class="bi bi-envelope"></i></button>
-                    <ul class="border-2 border-start border-info d-flex gap-3 mt-2 p-0 ps-3">
-                        <li class="list-group-item" style="font-size: 30px;"><i class="bi bi-github"></i></li>
-                        <li class="list-group-item" style="font-size: 30px;"><i class="bi bi-linkedin"></i></li>
-                    </ul>
-                    </div>
-                    </div>
-                    </div>
-        <div id="whatIDo" class="animate__animated animate__fadeInDown animate__fast">
-            <h2 class="text-info fw-semibold text-center">&ltWhat I do&gt</h2>
-            <div class="d-flex flex-column flex-md-row gap-4">
-                <div class="flex-item card w-100 bg-dark text-white">
-                    <div class="card-header">
-                        <h5 class="card-title">Web Development</h5>
-                        <h6 class="card-subtitle mb-2 text-white-50 ">Crafting Digital Experiences</h6>
-                    </div>
-                    <div class="card-body">
-                        <div>Crafting user-centric websites using front-end and back-end technologies for seamless online experiences.</div>
-                    </div>
-                </div>
-                <div class="flex-item card w-100">
-                    <div class="card-header">
-                        <h5 class="card-title">System Development</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Architecting Seamless Systems</h6>
-                    </div>
-                    <div class="card-body">
-                        <div>Designing and implementing efficient digital systems, from databases to APIs, ensuring seamless functionality.
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-item card w-100">
-                    <div class="card-header">
-                        <h5 class="card-title">Software Development</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Coding Innovation into Reality</h6>
-                    </div>
-                    <div class="card-body">
-                        <div>Turning ideas into reality with dynamic and scalable software solutions.</div>
+    <div id="grid-overlay"></div>
+    <div id="content-container">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-auto" href="#">Marcus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links"
+                    aria-controls="links" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="links">
+                    <div class="navbar-nav animate__animated animate__fadeInDown animate__fast">
+                        <a class="nav-link" href="#introduction">Contact</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#aboutMe">About me</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="skills" class="animate__animated animate__fadeInDown animate__fast animate__delay-1s">
-            <h2 class="text-info fw-semibold text-center">&ltSkills&gt</h2>
-            <div class="d-flex flex-column flex-md-row gap-4">
-                <div class="flex-item card w-100">
-                    <div class="card-header">
-                        <h5 class="card-title">Technical skills</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Some technologies I familiar with</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="container text-md">
-                            <div class="row">
-                                <div class="col-4">JavaScript</div>
-                                <div class="col-4">HTML</div>
-                                <div class="col-4">SCSS/CSS</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">Node.js</div>
-                                <div class="col-4">NestJS</div>
-                                <div class="col-4">PHP</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">Svelte</div>
-                                <div class="col-4">Vue</div>
-                                <div class="col-4">React</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">MySQL</div>
-                                <div class="col-4">MongoDB</div>
-                                <div class="col-4">Firebase</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-item card w-100">
-                    <div class="card-header">
-                        <h5 class="card-title">Tools I work with</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">To make life easier</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="container text-md">
-                            <div class="row">
-                                <div class="col-4">VS Code</div>
-                                <div class="col-4">Atom</div>
-                                <div class="col-4">Eclipse</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">ESLint</div>
-                                <div class="col-4">SASS</div>
-                                <div class="col-4">Tailwind</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">Sequelize</div>
-                                <div class="col-4">Mongoose</div>
-                                <div class="col-4">Postman</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">Npm</div>
-                                <div class="col-4">Yarn</div>
-                                <div class="col-4">Bootstrap</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-item card w-100">
-                    <div class="card-header">
-                        <h5 class="card-title">Collaboration</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">To achieve goals</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="container text-md">
-                            <div class="row">
-                                <div class="col-12">Problem Solving approach</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">Agile/Scrum Methodology</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">Communication and Collaboration</div>
-                                <div class="col-12">Slack & Microsoft Teams</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="aboutMe" class="animate__animated animate__fadeInDown animate__fast animate__delay-2s">
-            <h2 class="text-info fw-semibold text-center">&ltAbout me&gt</h2>
-            <div class="container">
+        </nav>
+        <div class="container d-flex flex-column gap-4" style="margin-top:100px">
+            <div id="introduction" class="container">
                 <div class="row">
-                    <div class="d-md-block d-none p-4 col-4">
-                        <img src="assets/godzilla.png" class="img-thumbnail rounded mx-auto"
-                            style="width:300px;display:block;"></img>
+                    <div class="col-12 col-md-6 order-md-last d-flex align-items-center">
+                        <img width="400px" class="img-fluid flex-shrink-1 rounded-circle mx-auto my-auto"
+                            src="assets/profile.png" alt="profile">
                     </div>
-                    <div class="col-12 p-4 col-md-8">
-                        <p>
-                            Hello there! 👋 I'm a junior web developer, but let's peel back the tech layers and get to know the
-                            person
-                            behind the code.
-                        </p>
-                        <p>
-                            Gaming is my downtime therapy—I'm always up for a round of exploration or strategy. When I'm not in
-                            the digital realm, you'll catch me geeking out over the latest tech trends and gadgets. I love
-                            dissecting how things work and staying on the tech pulse.
-                            Creativity is my other forte. Whether it's crafting visuals with Illustrator or tweaking images for that
-                            perfect touch, I find joy in the artistic side of things. 🎨
-                        </p>
-                        <p>
-                            My style? Bold and unapologetic. I believe in making a statement through unique fashion choices—it's
-                            like
-                            wearable self-expression.
-                            Now, the soundtrack to my coding sessions? Heavy metal. 🤘 When the code takes a back seat, I'm behind
-                            the drum kit, letting loose with the beats
-                        </p>
-                        <p>
-                            This is just a glimpse into who I am. Let's connect and explore the possibilities—whether it's about web
-                            development, gaming strategies, or simply sharing creative vibes. Looking forward to the journey ahead!
-                            🚀
-                        </p>
+                    <div class="col-12 col-md-6">
+                        <h1 class="d-flex flex-column font-monospace">
+                            <div class="d-flex">
+                                <span>Hi!</span>
+                                <span class="animate__animated animate__shakeX ">👋</span>
+                            </div>
+                            <span>I'm<span class="text-info"> Marcus Vilhelmsson</span></span>
+                        </h1>
+                        <p class="font-monospace">A software engineer, developer, and coffee enthusiast. Turning code into
+                            coffee-fueled
+                            creations, one line at a time ☕️</p>
+                        <button class="btn btn-outline-success align-self-start">Contact me! <i class="bi bi-envelope"></i></button>
+                        <ul class="border-2 border-start border-info d-flex gap-3 mt-2 p-0 ps-3">
+                            <li class="list-group-item" style="font-size: 30px;"><i class="bi bi-github"></i></li>
+                            <li class="list-group-item" style="font-size: 30px;"><i class="bi bi-linkedin"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <div id="whatIDo" class="animate__animated animate__fadeInDown animate__fast">
+                    <h2 class="text-info fw-semibold text-center">&ltWhat I do&gt</h2>
+                    <div class="d-flex flex-column flex-md-row gap-4">
+                        <div class="flex-item card w-100 bg-dark text-white">
+                            <div class="card-header">
+                                <h5 class="card-title">Web Development</h5>
+                                <h6 class="card-subtitle mb-2 text-white-50 ">Crafting Digital Experiences</h6>
+                            </div>
+                            <div class="card-body">
+                            <div>Crafting user-centric websites using front-end and back-end technologies for seamless online
+                                experiences.</div>
+                            </div>
+                            </div>
+                            <div class="flex-item card w-100">
+                                <div class="card-header">
+                                    <h5 class="card-title">System Development</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Architecting Seamless Systems</h6>
+                                </div>
+                                <div class="card-body">
+                            <div>Designing and implementing efficient digital systems, from databases to APIs, ensuring seamless
+                                functionality.
+                            </div>
+                            </div>
+                            </div>
+                            <div class="flex-item card w-100">
+                                <div class="card-header">
+                                    <h5 class="card-title">Software Development</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Coding Innovation into Reality</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div>Turning ideas into reality with dynamic and scalable software solutions.</div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+
+            <div id="skills" class="animate__animated animate__fadeInDown animate__fast animate__delay-1s">
+                <h2 class="text-info fw-semibold text-center">&ltSkills&gt</h2>
+                <div class="d-flex flex-column flex-md-row gap-4">
+                    <div class="flex-item card w-100">
+                        <div class="card-header">
+                            <h5 class="card-title">Technical skills</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Some technologies I familiar with</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="container text-md">
+                                <div class="row">
+                                    <div class="col-4">JavaScript</div>
+                                    <div class="col-4">HTML</div>
+                                    <div class="col-4">SCSS/CSS</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Node.js</div>
+                                    <div class="col-4">NestJS</div>
+                                    <div class="col-4">PHP</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Svelte</div>
+                                    <div class="col-4">Vue</div>
+                                    <div class="col-4">React</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">MySQL</div>
+                                    <div class="col-4">MongoDB</div>
+                                    <div class="col-4">Firebase</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item card w-100">
+                        <div class="card-header">
+                            <h5 class="card-title">Tools I work with</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">To make life easier</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="container text-md">
+                                <div class="row">
+                                    <div class="col-4">VS Code</div>
+                                    <div class="col-4">Atom</div>
+                                    <div class="col-4">Eclipse</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">ESLint</div>
+                                    <div class="col-4">SASS</div>
+                                    <div class="col-4">Tailwind</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Sequelize</div>
+                                    <div class="col-4">Mongoose</div>
+                                    <div class="col-4">Postman</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Npm</div>
+                                    <div class="col-4">Yarn</div>
+                                    <div class="col-4">Bootstrap</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-item card w-100">
+                        <div class="card-header">
+                            <h5 class="card-title">Collaboration</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">To achieve goals</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="container text-md">
+                                <div class="row">
+                                    <div class="col-12">Problem Solving approach</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">Agile/Scrum Methodology</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">Communication and Collaboration</div>
+                                    <div class="col-12">Slack & Microsoft Teams</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div id="projects" class="animate__animated animate__fadeInDown animate__fast animate__delay-3s">
-            <h2 class="text-info fw-semibold text-center">&ltProjects&gt</h2>
-        </div>
+            
+            <div id="aboutMe" class="animate__animated animate__fadeInDown animate__fast animate__delay-2s">
+                <h2 class="text-info fw-semibold text-center">&ltAbout me&gt</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="d-md-block d-none p-4 col-4">
+                            <img src="assets/godzilla.png" class="img-thumbnail rounded mx-auto"
+                                style="width:300px;display:block;"></img>
+                        </div>
+                        <div class="col-12 p-4 col-md-8">
+                            <p>
+                                Hello there! 👋 I'm a junior web developer, but let's peel back the tech layers and get to know the
+                                person
+                                behind the code.
+                            </p>
+                            <p>
+                                Gaming is my downtime therapy—I'm always up for a round of exploration or strategy. When I'm not in
+                                the digital realm, you'll catch me geeking out over the latest tech trends and gadgets. I love
+                                dissecting how things work and staying on the tech pulse.
+                                Creativity is my other forte. Whether it's crafting visuals with Illustrator or tweaking images for
+                                that
+                                perfect touch, I find joy in the artistic side of things. 🎨
+                                </p>
+                                <p>
+                                    My style? Bold and unapologetic. I believe in making a statement through unique fashion choices—it's
+                                    like
+                                    wearable self-expression.
+                                Now, the soundtrack to my coding sessions? Heavy metal. 🤘 When the code takes a back seat, I'm
+                                behind
+                                the drum kit, letting loose with the beats
+                                </p>
+                                <p>
+                                This is just a glimpse into who I am. Let's connect and explore the possibilities—whether it's about
+                                web
+                                development, gaming strategies, or simply sharing creative vibes. Looking forward to the journey
+                                ahead!
+                                🚀
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                
+                                <div id="projects" class="animate__animated animate__fadeInDown animate__fast animate__delay-3s">
+                                    <h2 class="text-info fw-semibold text-center">&ltProjects&gt</h2>
+                                </div>
+                                </div>
+                                <footer>
+                                    <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
+                                </footer>
     </div>
-    <footer>
-        <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
